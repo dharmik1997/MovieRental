@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+    <form action="add_user">
+		<input type="text" name="name" placeholder="Enter Name">
+		<input type="number" name="age" placeholder="Enter Age">
+		<input type="text" name="city" placeholder="Enter City">
+		<input type="submit" value="Add New Customer">
+	</form>
+	<ul>
+		{% for customer in customers %}
+		<li>{{customer.id}} {{customer.name}} {{customer.age}} <a href='/movieapp/available-movies/{{customer.id}}'>Rent Movie</a>
+        <a href="get-detail/{{customer.id}}"> Get details</a>
+        </li>
+		{% endfor %}
+	</ul>
+</body>
+</html>

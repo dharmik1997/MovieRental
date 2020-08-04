@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+
+	<ul>
+		{% for movie in movies %}
+		<li>{{movie.id}} {{movie.name}} <a href='/movieapp/rent-movie/{{cid}}/{{movie.id}}'>Add Movie</a></li>
+		{% endfor %}
+	</ul>
+</body>
+</html>

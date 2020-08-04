@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+	<p>Name: {{customers.name}}</p>
+	<p>Age: {{customers.age}}</p>
+	<p>City:{{customers.city}}</p>
+    <ul> {% for movie in customers.movies.all %}
+	    <p>Movie: {{movie}}</p>
+        {% endfor %}
+    </ul>
+    <p><a href='/movieapp/customers/'>Go Back to list</a></p>
+	<p><a href='unrent/{{cid}}'>Unrent Movie</a></p>
+</body>
+</html>
