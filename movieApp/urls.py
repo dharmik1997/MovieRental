@@ -1,5 +1,6 @@
 #first commit
 # adding feature 1
+#line added by pycharm to make conflict
 
 from django.urls import path
 from . import views
