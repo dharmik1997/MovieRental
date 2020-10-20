@@ -1,6 +1,6 @@
 #first commit
 # adding feature 1
-
+# line 2 added by someone else
 from django.urls import path
 from . import views
 
